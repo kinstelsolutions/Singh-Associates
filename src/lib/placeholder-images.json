@@ -1,3 +1,10 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-background",
+      "description": "A background image for the hero section, suggesting a professional legal setting.",
+      "imageUrl": "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxqdXN0aWNlJTIwc2NhbGVzfGVufDB8fHx8MTc2NTQ0ODM4OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "justice scales"
+    }
+  ]
 }
