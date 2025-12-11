@@ -25,7 +25,7 @@ const HeroSection = () => {
               Best Family Lawyer in Lucknow
             </h1>
             <p className="mt-6 max-w-xl text-lg md:text-xl text-slate-200 drop-shadow">
-              Navigating family legal matters requires a blend of compassionate understanding and sharp legal expertise. Singh Associates is dedicated to providing both.
+              We are dedicated to provide effortless legal solutions for your personal problems.With over 20 years of Experience in Family law we provide swift justice with ease.
             </p>
             <div className="mt-10">
               <Button size="lg" asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transform transition-transform duration-300 hover:scale-105 px-10 py-6 text-lg">
@@ -43,7 +43,7 @@ const HeroSection = () => {
                         "Personalized attention and a commitment to achieving the best possible outcome for our clients."
                     </p>
                     <div>
-                        <p className="font-headline text-4xl font-bold text-secondary">25+</p>
+                        <p className="font-headline text-4xl font-bold text-secondary">20+</p>
                         <p className="text-sm uppercase tracking-wider text-slate-400">Years of Experience</p>
                     </div>
                 </div>
