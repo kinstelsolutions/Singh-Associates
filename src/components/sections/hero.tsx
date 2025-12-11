@@ -1,30 +1,15 @@
-import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const HeroSection = () => {
-  const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
-
   return (
-    <section className="relative h-screen min-h-[700px] w-full flex items-center text-white">
-      {heroImage && (
-        <Image
-          src={heroImage.imageUrl}
-          alt={heroImage.description}
-          fill
-          className="object-cover"
-          priority
-          data-ai-hint={heroImage.imageHint}
-        />
-      )}
-      <div className="absolute inset-0 bg-black/70" />
-      <div className="relative z-10 container mx-auto px-6">
+    <section className="relative h-screen min-h-[700px] w-full flex items-center bg-background">
+      <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="text-left">
             <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary drop-shadow-lg">
               Best Family Lawyer in Lucknow
             </h1>
-            <p className="mt-6 max-w-xl text-lg md:text-xl text-slate-200 drop-shadow">
+            <p className="mt-6 max-w-xl text-lg md:text-xl text-muted-foreground drop-shadow">
               We are dedicated to provide effortless legal solutions for your personal problems.With over 20 years of Experience in Family law we provide swift justice with ease.
             </p>
             <div className="mt-10">
@@ -39,12 +24,12 @@ const HeroSection = () => {
             <div className="flex items-center gap-6">
                 <div className="h-48 w-px bg-secondary/50"></div>
                 <div className="space-y-6">
-                    <p className="text-slate-300 italic max-w-xs">
+                    <p className="text-muted-foreground italic max-w-xs">
                         "Personalized attention and a commitment to achieving the best possible outcome for our clients."
                     </p>
                     <div>
                         <p className="font-headline text-4xl font-bold text-secondary">20+</p>
-                        <p className="text-sm uppercase tracking-wider text-slate-400">Years of Experience</p>
+                        <p className="text-sm uppercase tracking-wider text-muted-foreground/80">Years of Experience</p>
                     </div>
                 </div>
             </div>
