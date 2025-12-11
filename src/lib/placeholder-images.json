@@ -3,8 +3,14 @@
     {
       "id": "hero-background",
       "description": "A background image for the hero section, suggesting a professional legal setting.",
-      "imageUrl": "https://images.unsplash.com/photo-1589578527966-fdac0f44566c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxqdXN0aWNlJTIwc2NhbGVzfGVufDB8fHx8MTc2NTQ0ODM4OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "justice scales"
+      "imageUrl": "https://images.unsplash.com/photo-1589216532372-1c2a36790049?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxjb3VydHJvb218ZW58MHx8fHwxNzE4NzQ3NTM4fDA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "courtroom gavel"
+    },
+    {
+      "id": "why-choose-us-image",
+      "description": "An image for the 'Why Choose Us' section, depicting a lawyer consulting with a client.",
+      "imageUrl": "https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZHZvY2F0ZSUyMGNsaWVudHxlbnwwfHx8fDE3MTg4MjI4ODd8MA&ixlib=rb-4.0.3&q=80&w=1080",
+      "imageHint": "lawyer client"
     }
   ]
 }
