@@ -21,7 +21,7 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="text-left">
-            <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-primary drop-shadow-lg">
+            <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary drop-shadow-lg">
               Expert Family Law Representation in Lucknow
             </h1>
             <p className="mt-6 max-w-xl text-lg md:text-xl text-slate-200 drop-shadow">
