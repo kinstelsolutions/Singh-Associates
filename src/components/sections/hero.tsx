@@ -22,7 +22,7 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="text-left">
             <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary drop-shadow-lg">
-              Expert Family Law Representation in Lucknow
+              Best Family Lawyer in Lucknow
             </h1>
             <p className="mt-6 max-w-xl text-lg md:text-xl text-slate-200 drop-shadow">
               Navigating family legal matters requires a blend of compassionate understanding and sharp legal expertise. Singh Associates is dedicated to providing both.
