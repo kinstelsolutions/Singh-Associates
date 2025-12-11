@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Gavel, Phone, Menu } from 'lucide-react';
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -53,6 +53,10 @@ const Header = () => {
                   </Button>
                 </SheetTrigger>
                 <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                  <SheetHeader className="p-4 text-left">
+                    <SheetTitle className="sr-only">Menu</SheetTitle>
+                    <SheetDescription className="sr-only">Main navigation</SheetDescription>
+                  </SheetHeader>
                   <div className="p-4">
                     <div className="flex flex-col space-y-4">
                       {navLinks.map((link) => (
