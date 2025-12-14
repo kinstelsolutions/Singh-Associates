@@ -4,7 +4,7 @@ import HeroSection from '@/components/sections/hero';
 import ServicesSection from '@/components/sections/services';
 import CtaSection from '@/components/sections/cta';
 import WhyChooseUsSection from '@/components/sections/why-choose-us';
-import DisclaimerSection from '@/components/sections/disclaimer';
+import DisclaimerDialog from '@/components/sections/disclaimer';
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <CtaSection />
       </main>
       <Footer />
-      <DisclaimerSection />
+      <DisclaimerDialog />
     </div>
   );
 }
