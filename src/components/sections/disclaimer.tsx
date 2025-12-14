@@ -20,8 +20,8 @@ const DisclaimerDialog = () => {
     return (
         <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
             <AlertDialogContent className="bg-background border-border">
-                <AlertDialogHeader className="text-center">
-                    <AlertDialogTitle className="font-headline text-2xl text-primary">Disclaimer</AlertDialogTitle>
+                <AlertDialogHeader>
+                    <AlertDialogTitle className="font-headline text-2xl text-primary text-center">Disclaimer</AlertDialogTitle>
                     <AlertDialogDescription asChild>
                         <div className="text-muted-foreground text-sm max-h-[60vh] overflow-y-auto">
                         <p className="mt-4 text-center">
