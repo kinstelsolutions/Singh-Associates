@@ -2,7 +2,6 @@ import Link from 'next/link';
 import { Gavel, MapPin, Phone, Mail } from 'lucide-react';
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
 
   return (
     <footer className="bg-muted text-muted-foreground">
@@ -47,9 +46,6 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div className="mt-12 border-t border-border pt-8 text-center text-sm text-muted-foreground/60">
-          <p>&copy; {currentYear} Singh Associates. All rights reserved.</p>
         </div>
       </div>
     </footer>
