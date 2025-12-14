@@ -3,9 +3,9 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'Singh Associates | Best Family Lawyer in Lucknow',
-  description: 'Expert legal services in family law. Singh Associates is the leading family law firm in Lucknow, specializing in divorce, child custody, and more.',
-  keywords: "family lawyer, lucknow, divorce lawyer, child custody, singh associates",
+  title: 'Family Lawyer in Lucknow | Singh Associates',
+  description: 'Need a family lawyer in Lucknow? Singh Associates offers expert legal services for divorce, child custody, and other family law matters with compassionate and strategic solutions.',
+  keywords: "family lawyer in lucknow, best family lawyer in lucknow, divorce lawyer lucknow, child custody lawyer lucknow, singh associates",
 };
 
 export default function RootLayout({

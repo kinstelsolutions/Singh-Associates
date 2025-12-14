@@ -14,7 +14,7 @@ const Footer = () => {
               <span className="font-headline text-2xl font-bold text-primary">Singh Associates</span>
             </Link>
             <p className="text-muted-foreground/80 max-w-md">
-              Your trusted partner in navigating complex family law matters in Lucknow. We provide compassionate and strategic legal solutions tailored to your unique situation.
+              Your trusted family lawyer in Lucknow, navigating complex legal matters with compassionate and strategic solutions tailored to your unique situation.
             </p>
           </div>
           <div>

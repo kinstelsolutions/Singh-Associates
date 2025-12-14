@@ -7,7 +7,7 @@ const CtaSection = () => {
       <div className="container mx-auto px-6 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
-              Get the Legal Support You Deserve
+              Contact Your Family Lawyer in Lucknow Today
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
               Your family's future is important. Contact us for a confidential consultation to discuss your case and understand your options. We're here to help you navigate through these challenging times with expertise and compassion.
