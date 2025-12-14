@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -11,22 +11,14 @@ import {
 import { Button } from '../ui/button';
 
 const DisclaimerDialog = () => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    useEffect(() => {
-        const hasAccepted = localStorage.getItem('disclaimerAccepted');
-        if (!hasAccepted) {
-            setIsOpen(true);
-        }
-    }, []);
+    const [isOpen, setIsOpen] = useState(true);
 
     const handleAccept = () => {
-        localStorage.setItem('disclaimerAccepted', 'true');
         setIsOpen(false);
     };
 
     return (
-        <AlertDialog open={isOpen}>
+        <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
             <AlertDialogContent className="bg-background border-border">
                 <AlertDialogHeader className="text-center">
                     <AlertDialogTitle className="font-headline text-2xl text-primary">Disclaimer</AlertDialogTitle>
