@@ -7,20 +7,24 @@ import {
   
   const faqs = [
     {
-      question: "What types of cases do you handle?",
-      answer: "We specialize in family law, including divorce, child custody, alimony, and domestic violence cases. We also handle civil and criminal litigation."
+      question: "What types of family law cases do you handle?",
+      answer: "We handle a wide range of family law matters, including divorce (both mutual and contested), child custody and support, alimony (spousal maintenance), domestic violence, prenuptial agreements, and property division."
     },
     {
-      question: "How much do you charge for a consultation?",
-      answer: "We offer a free initial consultation to discuss your case and provide preliminary advice. This helps you understand your legal options without any financial commitment."
+      question: "Do you offer a free initial consultation?",
+      answer: "Yes, we offer a confidential initial consultation to help you understand your legal rights and options. This allows us to assess your situation and determine the best course of action."
     },
     {
-      question: "What should I bring to my first meeting?",
-      answer: "Please bring all relevant documents, such as court papers, agreements, and any communication related to your case. A timeline of events is also helpful."
+      question: "How much will my case cost?",
+      answer: "The cost of legal representation depends on the complexity of your case. We provide a transparent fee structure and will discuss all potential costs with you upfront. Our goal is to provide cost-effective solutions."
     },
     {
-      question: "How long will my case take?",
-      answer: "The duration of a case varies depending on its complexity. We strive for a swift resolution while ensuring the best possible outcome for you."
+      question: "How long does a divorce take in Lucknow?",
+      answer: "The timeline for a divorce varies. A mutual consent divorce can be finalized in as little as six months, while a contested divorce may take longer depending on the specific issues and court schedules."
+    },
+    {
+        question: "What is the process for child custody in India?",
+        answer: "The court's primary consideration is the child's welfare. Factors include the child's age, each parent's ability to provide a stable environment, and the child's preference if they are old enough. We will guide you through the process to protect your parental rights."
     }
   ]
   
