@@ -20,6 +20,7 @@ const Header = () => {
   const navLinks = [
     { href: '#services', label: 'Practice Areas' },
     { href: '#why-us', label: 'Why Choose Us' },
+    { href: '#faq', label: 'FAQs' },
     { href: '#contact', label: 'Contact' },
   ];
 

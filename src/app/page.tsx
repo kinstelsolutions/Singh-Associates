@@ -5,6 +5,7 @@ import ServicesSection from '@/components/sections/services';
 import CtaSection from '@/components/sections/cta';
 import WhyChooseUsSection from '@/components/sections/why-choose-us';
 import DisclaimerDialog from '@/components/sections/disclaimer';
+import FaqSection from '@/components/sections/faq';
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <HeroSection />
         <ServicesSection />
         <WhyChooseUsSection />
+        <FaqSection />
         <CtaSection />
       </main>
       <Footer />
