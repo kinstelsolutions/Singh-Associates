@@ -7,20 +7,20 @@ import {
   
   const faqs = [
     {
-      question: "What are the charges of a family lawyer in Lucknow?",
-      answer: "The charges of a family lawyer in Lucknow can vary widely depending on the lawyer's experience, the complexity of the case, and the law firm's reputation. It's best to schedule a consultation to discuss the specifics of your case and get a clear understanding of the fee structure."
+      question: "What types of cases do you handle?",
+      answer: "We specialize in family law, including divorce, child custody, alimony, and domestic violence cases. We also handle civil and criminal litigation."
     },
     {
-      question: "How do I choose the best family lawyer in Lucknow?",
-      answer: "When choosing a family lawyer, consider their experience in family law, track record, client testimonials, and communication style. It's crucial to find a lawyer who you trust and feel comfortable working with during such a sensitive time."
+      question: "How much do you charge for a consultation?",
+      answer: "We offer a free initial consultation to discuss your case and provide preliminary advice. This helps you understand your legal options without any financial commitment."
     },
     {
-      question: "What issues do family lawyers handle?",
-      answer: "Family lawyers handle a variety of issues, including divorce, child custody and support, alimony, property division, adoption, and domestic violence cases. An experienced family lawyer can provide guidance and representation on all these matters."
+      question: "What should I bring to my first meeting?",
+      answer: "Please bring all relevant documents, such as court papers, agreements, and any communication related to your case. A timeline of events is also helpful."
     },
     {
-      question: "Do I always need a lawyer for family court?",
-      answer: "While you can represent yourself, it's highly recommended to have a lawyer, especially in complex cases. Family law is intricate, and a lawyer can ensure your rights are protected, handle paperwork correctly, and navigate the legal system effectively on your behalf."
+      question: "How long will my case take?",
+      answer: "The duration of a case varies depending on its complexity. We strive for a swift resolution while ensuring the best possible outcome for you."
     }
   ]
   
