@@ -12,8 +12,13 @@ import { Button } from '../ui/button';
 
 const DisclaimerDialog = () => {
     const [isOpen, setIsOpen] = React.useState(true);
+    
+    if (!isOpen) {
+        return null;
+    }
+
     return (
-        <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
+        <AlertDialog open={true} onOpenChange={() => setIsOpen(false)}>
             <AlertDialogContent className="bg-background border-border">
                 <AlertDialogHeader>
                     <AlertDialogTitle className="font-headline text-2xl text-primary text-center">Disclaimer</AlertDialogTitle>
