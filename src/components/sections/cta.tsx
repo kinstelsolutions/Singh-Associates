@@ -32,7 +32,7 @@ const CtaSection = () => {
                       <Mail className="h-6 w-6 text-secondary" />
                   </div>
                   <h3 className="font-headline text-xl font-semibold text-primary">Email</h3>
-                  <a href="mailto:contact@singhassociates.law" className="mt-1 text-muted-foreground hover:text-secondary">contact@singhassociates.law</a>
+                  <a href="mailto:contact@singhassociates.ai-fied.com" className="mt-1 text-muted-foreground hover:text-secondary">contact@singhassociates.ai-fied.com</a>
               </div>
               <div className="flex flex-col items-center text-center">
                   <div className="p-4 bg-background rounded-full mb-4">
