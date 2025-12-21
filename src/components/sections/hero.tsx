@@ -28,7 +28,7 @@ const HeroSection = () => {
                         "Personalized attention and a commitment to achieving the best possible outcome for our clients."
                     </p>
                     <div>
-                        <p className="font-headline text-4xl font-bold text-secondary">25</p>
+                        <p className="font-headline text-4xl font-bold text-secondary">25+</p>
                         <p className="text-sm uppercase tracking-wider text-muted-foreground/80">Years of Experience</p>
                     </div>
                 </div>
