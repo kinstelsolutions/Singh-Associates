@@ -7,7 +7,7 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="text-left">
             <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary drop-shadow-lg">
-              Top Family Lawyer in Lucknow
+              Trusted Family Lawyer in Lucknow
             </h1>
             <p className="mt-6 max-w-xl text-lg md:text-xl text-muted-foreground drop-shadow">
               We are dedicated to provide effortless legal solutions for your personal problems.With over 20 years of Experience in Family law we provide swift justice with ease.
