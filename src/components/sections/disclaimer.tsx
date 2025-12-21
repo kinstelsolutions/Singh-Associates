@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React from 'react';
 import {
   AlertDialog,
   AlertDialogAction,
@@ -11,12 +11,7 @@ import {
 import { Button } from '../ui/button';
 
 const DisclaimerDialog = () => {
-    const [isOpen, setIsOpen] = useState(true);
-
-    const handleAccept = () => {
-        setIsOpen(false);
-    };
-
+    const [isOpen, setIsOpen] = React.useState(true);
     return (
         <AlertDialog open={isOpen} onOpenChange={setIsOpen}>
             <AlertDialogContent className="bg-background border-border">
@@ -32,7 +27,7 @@ const DisclaimerDialog = () => {
                 </AlertDialogHeader>
                 <div className="flex justify-center mt-4">
                     <AlertDialogAction asChild>
-                       <Button onClick={handleAccept}>I Understand & Continue</Button>
+                       <Button onClick={() => setIsOpen(false)}>I Understand & Continue</Button>
                     </AlertDialogAction>
                 </div>
             </AlertDialogContent>
