@@ -1,9 +1,24 @@
 import { Button } from '@/components/ui/button';
+import Image from 'next/image';
+import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 const HeroSection = () => {
+    const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-background');
+
   return (
     <section className="relative h-screen min-h-[700px] w-full flex items-center bg-background">
-      <div className="container mx-auto px-6">
+      {heroImage && (
+        <Image
+          src={heroImage.imageUrl}
+          alt={heroImage.description}
+          fill
+          className="object-cover"
+          priority
+          data-ai-hint={heroImage.imageHint}
+        />
+      )}
+      <div className="absolute inset-0 bg-black/60" />
+      <div className="relative container mx-auto px-6 z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="text-left">
             <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary drop-shadow-lg">
@@ -15,7 +30,7 @@ const HeroSection = () => {
             <div className="mt-10">
               <Button size="lg" asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transform transition-transform duration-300 hover:scale-105 px-10 py-6 text-lg">
                 <a href="tel:7007894901">
-                  Schedule a Consultation
+                  15min-Free Consultation
                 </a>
               </Button>
             </div>
