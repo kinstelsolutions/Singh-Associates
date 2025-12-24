@@ -10,7 +10,7 @@ const HeroSection = () => {
               Trusted Family <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[hsl(217,91%,75%)]">Lawyer</span> in Lucknow
             </h1>
             <p className="mt-6 max-w-xl text-lg md:text-xl text-muted-foreground">
-              We are dedicated to provide effortless legal solutions for your personal problems.With over 20 years of Experience in Family law we provide swift justice with ease.
+              We are dedicated to provide effortless legal solutions for your personal problems.With over 25 years of Experience in Family law we provide swift justice with ease.
             </p>
             <div className="mt-10">
               <Button size="lg" asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transform transition-transform duration-300 hover:scale-105 px-10 py-6 text-lg">
