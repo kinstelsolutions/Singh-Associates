@@ -30,7 +30,7 @@ const HeroSection = () => {
             <div className="mt-10">
               <Button size="lg" asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transform transition-transform duration-300 hover:scale-105 px-10 py-6 text-lg">
                 <a href="tel:7007894901">
-                  FREE
+                  15min-FREE Consultation
                 </a>
               </Button>
             </div>
