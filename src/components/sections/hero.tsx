@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button';
 
 const HeroSection = () => {
   return (
-    <section className="h-screen min-h-[700px] w-full flex items-center bg-background">
+    <section className="w-full flex items-center bg-background pt-16 pb-24 md:h-screen md:min-h-[700px] md:py-0">
       <div className="container mx-auto px-6 z-10">
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="text-left">
