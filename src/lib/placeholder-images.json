@@ -8,9 +8,9 @@
     },
     {
       "id": "why-choose-us-image",
-      "description": "An image for the 'Why Choose Us' section, depicting a lawyer consulting with a client.",
-      "imageUrl": "https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxhZHZvY2F0ZSUyMGNsaWVudHxlbnwwfHx8fDE3MTg4MjI4ODd8MA&ixlib=rb-4.0.3&q=80&w=1080",
-      "imageHint": "lawyer client"
+      "description": "An image for the 'Why Choose Us' section, depicting law does Not discriminate",
+      "imageUrl": "https://images.unsplash.com/photo-1590099543482-3b3d3083a474?q=80&w=704&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "Law statue"
     }
   ]
 }

@@ -1,3 +1,4 @@
+'use client';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { CheckCircle2 } from 'lucide-react';
