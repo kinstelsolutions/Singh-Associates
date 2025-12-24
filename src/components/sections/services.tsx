@@ -30,7 +30,7 @@ const services = [
   {
     icon: <Users className="h-8 w-8 text-secondary" />,
     title: 'Family Law Advisory',
-    description: 'Comprehensive legal advice on all aspects of family law, from prenuptials to separations.',
+    description: 'Comprehensive legal advice on all aspects of family law, from mediation to separations.',
   },
 ];
 
