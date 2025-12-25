@@ -1,7 +1,6 @@
 import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
-import Script from 'next/script';
 
 export const metadata: Metadata = {
   title: 'Family Lawyer in Lucknow | Singh Associates',
@@ -22,16 +21,6 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body bg-background text-foreground antialiased">
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZM03Y1CNK"></Script>
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-8ZM03Y1CNK');
-          `}
-        </Script>
         {children}
         <Toaster />
       </body>
