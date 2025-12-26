@@ -5,6 +5,13 @@ import { Button } from '@/components/ui/button';
 import { Gavel, Phone, Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
 
+declare global {
+  interface Window {
+    gtag_report_conversion: (url: string) => boolean;
+  }
+}
+
+
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -29,6 +36,15 @@ const Header = () => {
     { href: '#contact', label: 'Contact' },
   ];
 
+  const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (window.gtag_report_conversion) {
+      window.gtag_report_conversion('tel:7007894901');
+    } else {
+      window.location.href = 'tel:7007894901';
+    }
+  };
+
   return (
     <header className={`sticky top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? 'bg-background/95 border-b border-border backdrop-blur supports-[backdrop-filter]:bg-background/60' : 'bg-transparent'}`}>
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
@@ -46,7 +62,7 @@ const Header = () => {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <a href="tel:7007894901" className="flex items-center gap-3 text-md font-semibold text-[#00FFFF] hover:text-secondary transition-colors underline underline-offset-4">
+          <a href="tel:7007894901" onClick={handleCallClick} className="flex items-center gap-3 text-md font-semibold text-[#00FFFF] hover:text-secondary transition-colors underline underline-offset-4">
             <Phone className="h-4 w-4 animate-pulse" />
             <span>7007894901</span>
           </a>

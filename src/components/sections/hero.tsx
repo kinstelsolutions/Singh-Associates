@@ -1,6 +1,22 @@
+'use client';
 import { Button } from '@/components/ui/button';
 
+declare global {
+  interface Window {
+    gtag_report_conversion: (url: string) => boolean;
+  }
+}
+
 const HeroSection = () => {
+    const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (window.gtag_report_conversion) {
+      window.gtag_report_conversion('tel:7007894901');
+    } else {
+      window.location.href = 'tel:7007894901';
+    }
+  };
+
   return (
     <section className="w-full flex items-center bg-background pt-16 pb-24 md:h-screen md:min-h-[700px] md:py-0">
       <div className="container mx-auto px-6 z-10">
@@ -14,7 +30,7 @@ const HeroSection = () => {
             </p>
             <div className="mt-10">
               <Button size="lg" asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transform transition-transform duration-300 hover:scale-105 px-10 py-6 text-lg">
-                <a href="tel:7007894901">
+                <a href="tel:7007894901" onClick={handleCallClick}>
                   15min-FREE Consultation
                 </a>
               </Button>

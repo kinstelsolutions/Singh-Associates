@@ -1,7 +1,23 @@
+'use client';
 import { Button } from '@/components/ui/button';
 import { Mail, MapPin, Phone } from 'lucide-react';
 
+declare global {
+  interface Window {
+    gtag_report_conversion: (url: string) => boolean;
+  }
+}
+
 const CtaSection = () => {
+    const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    if (window.gtag_report_conversion) {
+      window.gtag_report_conversion('tel:7007894901');
+    } else {
+      window.location.href = 'tel:7007894901';
+    }
+  };
+
   return (
     <section id="contact" className="bg-muted">
       <div className="container mx-auto px-6 py-16 md:py-24">
@@ -14,7 +30,7 @@ const CtaSection = () => {
             </p>
             <div className="mt-10">
               <Button size="lg" asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transform transition-transform duration-300 hover:scale-105">
-                <a href="tel:7007894901">
+                <a href="tel:7007894901" onClick={handleCallClick}>
                   Schedule a Consultation
                 </a>
               </Button>
@@ -25,7 +41,7 @@ const CtaSection = () => {
                       <Phone className="h-6 w-6 text-secondary" />
                   </div>
                   <h3 className="font-headline text-xl font-semibold text-primary">Phone</h3>
-                  <a href="tel:7007894901" className="mt-1 text-muted-foreground hover:text-secondary">7007894901</a>
+                  <a href="tel:7007894901" onClick={handleCallClick} className="mt-1 text-muted-foreground hover:text-secondary">7007894901</a>
               </div>
               <div className="flex flex-col items-center text-center">
                   <div className="p-4 bg-background rounded-full mb-4">

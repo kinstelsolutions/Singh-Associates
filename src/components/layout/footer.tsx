@@ -1,8 +1,23 @@
+'use client';
 import Link from 'next/link';
 import { Gavel, MapPin, Phone, Mail } from 'lucide-react';
 
+declare global {
+  interface Window {
+    gtag_report_conversion: (url: string) => boolean;
+  }
+}
+
 const Footer = () => {
     const currentYear = new Date().getFullYear();
+    const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+      e.preventDefault();
+      if (window.gtag_report_conversion) {
+        window.gtag_report_conversion('tel:7007894901');
+      } else {
+        window.location.href = 'tel:7007894901';
+      }
+    };
 
   return (
     <footer className="bg-muted text-muted-foreground">
@@ -31,7 +46,7 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <Phone className="h-5 w-5 mt-1 shrink-0 text-secondary" />
-                <a href="tel:7007894901" className="hover:text-secondary transition-colors">
+                <a href="tel:7007894901" onClick={handleCallClick} className="hover:text-secondary transition-colors">
                   7007894901
                 </a>
               </li>
