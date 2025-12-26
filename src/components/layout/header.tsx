@@ -72,14 +72,6 @@ const Header = () => {
                          </a>
                       ))}
                     </div>
-                     <div className="mt-8">
-                        <Button asChild className="w-full bg-secondary text-secondary-foreground">
-                          <a href="tel:7007894901">
-                            <Phone className="mr-2 h-4 w-4" />
-                            Call Now
-                          </a>
-                        </Button>
-                      </div>
                   </div>
                 </SheetContent>
             </Sheet>
