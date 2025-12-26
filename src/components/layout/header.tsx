@@ -29,7 +29,9 @@ const Header = () => {
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
         <Link href="/" className="flex items-center gap-3" aria-label="Singh Associates Home">
           <Gavel className="h-7 w-7 text-secondary" />
-          <span className="font-headline text-2xl font-bold text-primary">Singh Associates</span>
+          <span className="font-headline text-xl sm:text-2xl font-bold text-primary">
+            Singh <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[hsl(217,91%,75%)]">Associates</span>
+          </span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
@@ -38,13 +40,11 @@ const Header = () => {
             </a>
           ))}
         </nav>
-        <div className="flex items-center gap-2">
-          <Button asChild variant="secondary" className="hidden sm:flex">
-            <a href="tel:7007894901" className="flex items-center gap-2">
-              <Phone className="h-4 w-4" />
-              <span>Call Now</span>
-            </a>
-          </Button>
+        <div className="flex items-center gap-4">
+          <a href="tel:7007894901" className="flex items-center gap-3 text-md font-semibold text-[#00FFFF] hover:text-secondary transition-colors underline underline-offset-4">
+            <Phone className="h-4 w-4 animate-pulse" />
+            <span>7007894901</span>
+          </a>
           <div className="md:hidden">
              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                 <SheetTrigger asChild>
@@ -66,6 +66,14 @@ const Header = () => {
                          </a>
                       ))}
                     </div>
+                     <div className="mt-8">
+                        <Button asChild className="w-full bg-secondary text-secondary-foreground">
+                          <a href="tel:7007894901">
+                            <Phone className="mr-2 h-4 w-4" />
+                            Call Now
+                          </a>
+                        </Button>
+                      </div>
                   </div>
                 </SheetContent>
             </Sheet>

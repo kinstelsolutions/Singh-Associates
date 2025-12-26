@@ -1,4 +1,5 @@
 import type {Config} from 'tailwindcss';
+const defaultTheme = require('tailwindcss/defaultTheme');
 
 export default {
   darkMode: ['class'],
@@ -9,6 +10,10 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        'xs': '475px',
+        ...defaultTheme.screens,
+      },
       fontFamily: {
         body: ['Open Sans', 'sans-serif'],
         headline: ['Playfair Display', 'serif'],
