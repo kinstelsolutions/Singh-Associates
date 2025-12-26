@@ -8,6 +8,11 @@ import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTr
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -46,6 +51,7 @@ const Header = () => {
             <span>7007894901</span>
           </a>
           <div className="md:hidden">
+            {isMounted && (
              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
                 <SheetTrigger asChild>
                   <Button variant="ghost" size="icon">
@@ -77,6 +83,7 @@ const Header = () => {
                   </div>
                 </SheetContent>
             </Sheet>
+            )}
           </div>
         </div>
       </div>
