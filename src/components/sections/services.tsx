@@ -5,32 +5,32 @@ const services = [
   {
     icon: <Gavel className="h-8 w-8 text-secondary" />,
     title: 'Divorce Proceedings',
-    description: 'Expert guidance through contested and uncontested divorce proceedings with dignity and respect.',
+    description: 'As your dedicated divorce lawyer in Lucknow, we provide expert guidance through contested and uncontested divorce proceedings with dignity.',
   },
   {
     icon: <Baby className="h-8 w-8 text-secondary" />,
     title: 'Child Custody',
-    description: 'Protecting your parental rights and ensuring the best interests of your children are prioritized.',
+    description: 'Our family advocates in Lucknow focus on protecting your parental rights and ensuring the best interests of your children are prioritized.',
   },
   {
     icon: <Landmark className="h-8 w-8 text-secondary" />,
     title: 'Alimony & Maintenance',
-    description: 'Fairly and effectively handling spousal support and maintenance claims.',
+    description: 'We fairly and effectively handle spousal support and maintenance claims, ensuring a just outcome in family court.',
   },
   {
     icon: <ShieldAlert className="h-8 w-8 text-secondary" />,
     title: 'Domestic Violence',
-    description: 'Immediate and decisive legal action to protect you and your family from harm.',
+    description: 'As experienced family court lawyers, we take immediate and decisive legal action to protect you and your family from harm.',
   },
   {
     icon: <HeartHandshake className="h-8 w-8 text-secondary" />,
     title: 'Mutual Consent Divorce',
-    description: 'Streamlining the divorce process for amicable separations, saving time and emotional distress.',
+    description: 'We streamline the mutual consent divorce process, saving you time and emotional distress with compassionate legal counsel.',
   },
   {
     icon: <Users className="h-8 w-8 text-secondary" />,
     title: 'Family Law Advisory',
-    description: 'Comprehensive legal advice on all aspects of family law, from mediation to separations.',
+    description: 'Get comprehensive legal advice on all aspects of family law from a leading family advocate in Lucknow.',
   },
 ];
 
@@ -42,7 +42,7 @@ const ServicesSection = () => {
           <p className="text-secondary font-semibold">OUR SERVICES</p>
           <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mt-2">Our Areas of Expertise</h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            We specialize in all facets of family law, providing robust and empathetic legal support to our clients during their most challenging times.
+            At Singh Associates in Lucknow, we specialize in all facets of family law. As your dedicated family advocate, we provide robust and empathetic legal support.
           </p>
         </div>
         <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">

@@ -23,10 +23,10 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="text-left">
             <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary">
-              Trusted Family <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[hsl(217,91%,75%)]">Lawyer</span> in Lucknow
+              Trusted Family & <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[hsl(217,91%,75%)]">Divorce Lawyer</span> in Lucknow
             </h1>
             <p className="mt-6 max-w-xl text-lg md:text-xl text-muted-foreground">
-              We are dedicated to provide effortless legal solutions for your personal problems.With over 25 years of Experience in Family law we provide swift justice with ease.
+              As a leading family advocate in Lucknow, Singh Associates provides expert legal solutions for your personal challenges. With over 25 years of experience in family law and family court proceedings, we ensure swift justice with ease.
             </p>
             <div className="mt-10">
               <Button size="lg" asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transform transition-transform duration-300 hover:scale-105 px-10 py-6 text-lg">

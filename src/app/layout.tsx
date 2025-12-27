@@ -5,9 +5,9 @@ import { Analytics } from "@vercel/analytics/next"
 import Script from 'next/script';
 
 export const metadata: Metadata = {
-  title: 'Family Lawyer in Lucknow | Singh Associates',
-  description: 'Need a family lawyer in Lucknow? Singh Associates offers expert legal services for divorce, child custody, and other family law matters with compassionate and strategic solutions.',
-  keywords: "family lawyer in lucknow, trusted family lawyer in lucknow, divorce lawyer lucknow, child custody lawyer lucknow, singh associates",
+  title: 'Trusted Family Lawyer in Lucknow | Singh Associates | Divorce & Court Matters',
+  description: 'Looking for a trusted family lawyer in Lucknow? Singh Associates, a leading family advocate in Lucknow, specializes in divorce cases and family court matters. Get expert legal help today.',
+  keywords: "family lawyer in lucknow, family advocate in lucknow, divorce lawyer in lucknow,family court lawyer in lucknow, singh associates",
 };
 
 export default function RootLayout({

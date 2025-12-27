@@ -33,10 +33,10 @@ const WhyChooseUsSection = () => {
           <div className="order-2 md:order-1">
             <p className="text-secondary font-semibold">WHY CHOOSE US</p>
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary mt-2">
-              Why Choose Us as Your Family Lawyer in Lucknow
+              Why Singh Associates is Your Trusted Family Lawyer in Lucknow
             </h2>
             <p className="mt-4 text-lg text-muted-foreground">
-              At Singh Associates, we combine legal expertise with a deep understanding of the sensitive nature of family law to provide you with exceptional representation.
+              At Singh Associates, we combine legal expertise with a deep understanding of the sensitive nature of family law to provide you with exceptional representation. As a leading family advocate in Lucknow, we are your trusted partner.
             </p>
             <ul className="mt-8 space-y-4">
               {features.map((feature, index) => (

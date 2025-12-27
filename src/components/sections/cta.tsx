@@ -23,10 +23,10 @@ const CtaSection = () => {
       <div className="container mx-auto px-6 py-16 md:py-24">
         <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-headline text-3xl md:text-4xl font-bold text-primary">
-              Contact Your Family Lawyer in Lucknow Today
+              Contact a Leading Family Court Lawyer in Lucknow Today
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
-              Your family's future is important. Contact us for a confidential consultation to discuss your case and understand your options. We're here to help you navigate through these challenging times with expertise and compassion.
+              Your family's future is important. Contact Singh Associates for a confidential consultation to discuss your case. As a premier family and divorce lawyer in Lucknow, we are here to help you navigate these challenges with expertise.
             </p>
             <div className="mt-10">
               <Button size="lg" asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transform transition-transform duration-300 hover:scale-105">
