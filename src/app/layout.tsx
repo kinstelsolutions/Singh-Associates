@@ -32,14 +32,14 @@ export default function RootLayout({
     <html lang="en" className={`${openSans.variable} ${playfairDisplay.variable} dark scroll-smooth`}>
       <head>
         {/* Google tag (gtag.js) */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZM03Y1CNK"></Script>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-WM58ZG0GEG"></Script>
         <Script id="google-analytics">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', 'G-8ZM03Y1CNK');
+            gtag('config', 'G-WM58ZG0GEG');
           `}
         </Script>
         {/* Event snippet for Click to call (1) conversion page */}

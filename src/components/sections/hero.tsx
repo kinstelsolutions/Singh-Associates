@@ -4,16 +4,22 @@ import { Button } from '@/components/ui/button';
 declare global {
   interface Window {
     gtag_report_conversion: (url: string) => boolean;
+    gtag: (...args: any[]) => void;
   }
 }
 
 const HeroSection = () => {
     const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    if (window.gtag_report_conversion) {
-      window.gtag_report_conversion('tel:7007894901');
+    if (window.gtag) {
+      window.gtag('event', 'client_called');
+      if (window.gtag_report_conversion) {
+        window.gtag_report_conversion('tel:7007894901');
+      } else {
+        window.location.href = 'tel:7007894901';
+      }
     } else {
-      window.location.href = 'tel:7007894901';
+        window.location.href = 'tel:7007894901';
     }
   };
 

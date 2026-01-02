@@ -3,11 +3,12 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Gavel, Phone, Menu } from 'lucide-react';
-import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '@/components/ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetDescription } from '@/components/ui/sheet';
 
 declare global {
   interface Window {
     gtag_report_conversion: (url: string) => boolean;
+    gtag: (...args: any[]) => void;
   }
 }
 
@@ -38,10 +39,15 @@ const Header = () => {
 
   const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
-    if (window.gtag_report_conversion) {
-      window.gtag_report_conversion('tel:7007894901');
+    if (window.gtag) {
+      window.gtag('event', 'client_called');
+      if (window.gtag_report_conversion) {
+        window.gtag_report_conversion('tel:7007894901');
+      } else {
+        window.location.href = 'tel:7007894901';
+      }
     } else {
-      window.location.href = 'tel:7007894901';
+        window.location.href = 'tel:7007894901';
     }
   };
 
