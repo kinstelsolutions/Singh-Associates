@@ -1,5 +1,5 @@
-'use client';
-import { Button } from '@/components/ui/button';
+"use client";
+import { Button } from "@/components/ui/button";
 
 declare global {
   interface Window {
@@ -9,17 +9,17 @@ declare global {
 }
 
 const HeroSection = () => {
-    const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+  const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     e.preventDefault();
     if (window.gtag) {
-      window.gtag('event', 'client_called');
+      window.gtag("event", "client_called");
       if (window.gtag_report_conversion) {
-        window.gtag_report_conversion('tel:7007894901');
+        window.gtag_report_conversion("tel:7007894901");
       } else {
-        window.location.href = 'tel:7007894901';
+        window.location.href = "tel:7007894901";
       }
     } else {
-        window.location.href = 'tel:7007894901';
+      window.location.href = "tel:7007894901";
     }
   };
 
@@ -29,31 +29,48 @@ const HeroSection = () => {
         <div className="grid md:grid-cols-2 gap-16 items-center">
           <div className="text-left">
             <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary">
-              Trusted Family & <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[hsl(217,91%,75%)]">Divorce Lawyer</span> in Lucknow
+              Trusted Family &{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[hsl(217,91%,75%)]">
+                Divorce Lawyer
+              </span>{" "}
+              in Lucknow
             </h1>
             <p className="mt-6 max-w-xl text-lg md:text-xl text-muted-foreground">
-              As a leading family advocate in Lucknow, Singh Associates provides expert legal solutions for your personal challenges. With over 25 years of experience in family law and family court proceedings, we ensure swift justice with ease.
+              As a leading family advocate in Lucknow, Singh Associates provides
+              expert legal solutions for your personal challenges. With over 25
+              years of experience in family law and family court proceedings, we
+              ensure swift justice with ease.
             </p>
             <div className="mt-10">
-              <Button size="lg" asChild className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transform transition-transform duration-300 hover:scale-105 px-10 py-6 text-lg">
-                <a href="tel:7007894901" onClick={handleCallClick}>
-                  15min-FREE Consultation
+              <Button
+                size="lg"
+                asChild
+                className="bg-secondary text-secondary-foreground hover:bg-secondary/90 transform transition-transform duration-300 hover:scale-105 px-10 py-6 text-lg">
+                <a
+                  href="tel:7007894901"
+                  onClick={handleCallClick}>
+                  Consult Now
                 </a>
               </Button>
             </div>
           </div>
           <div className="hidden md:flex justify-center items-center">
             <div className="flex items-center gap-6">
-                <div className="h-48 w-px bg-secondary/50"></div>
-                <div className="space-y-6">
-                    <p className="text-muted-foreground italic max-w-xs">
-                        "Personalized attention and a commitment to achieving the best possible outcome for our clients."
-                    </p>
-                    <div>
-                        <p className="font-headline text-4xl font-bold text-secondary">25+</p>
-                        <p className="text-sm uppercase tracking-wider text-muted-foreground/80">Years of Experience</p>
-                    </div>
+              <div className="h-48 w-px bg-secondary/50"></div>
+              <div className="space-y-6">
+                <p className="text-muted-foreground italic max-w-xs">
+                  "Personalized attention and a commitment to achieving the best
+                  possible outcome for our clients."
+                </p>
+                <div>
+                  <p className="font-headline text-4xl font-bold text-secondary">
+                    25+
+                  </p>
+                  <p className="text-sm uppercase tracking-wider text-muted-foreground/80">
+                    Years of Experience
+                  </p>
                 </div>
+              </div>
             </div>
           </div>
         </div>

@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/next"
 import Script from 'next/script';
 import { Open_Sans, Playfair_Display } from 'next/font/google';
+import { ThemeProvider } from "@/components/theme-provider";
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -29,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${openSans.variable} ${playfairDisplay.variable} dark scroll-smooth`}>
+    <html lang="en" className={`${openSans.variable} ${playfairDisplay.variable} scroll-smooth`} suppressHydrationWarning>
       <head>
         {/* Google tag (gtag.js) */}
         <Script async src="https://www.googletagmanager.com/gtag/js?id=G-WM58ZG0GEG"></Script>
@@ -63,9 +64,16 @@ export default function RootLayout({
         </Script>
       </head>
       <body className="font-body bg-background text-foreground antialiased">
-        {children}
-        <Analytics />
-        <Toaster />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="light"
+          enableSystem={false}
+          disableTransitionOnChange
+        >
+          {children}
+          <Analytics />
+          <Toaster />
+        </ThemeProvider>
       </body>
     </html>
   );

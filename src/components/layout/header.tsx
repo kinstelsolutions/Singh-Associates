@@ -2,8 +2,10 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { Gavel, Phone, Menu } from 'lucide-react';
+import { Phone, Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetDescription } from '@/components/ui/sheet';
+import { ThemeToggle } from '@/components/ui/theme-toggle';
+import { Logo } from '@/components/ui/logo';
 
 declare global {
   interface Window {
@@ -54,12 +56,7 @@ const Header = () => {
   return (
     <header className={`sticky top-0 z-50 w-full transition-colors duration-300 ${isScrolled ? 'bg-background/95 border-b border-border backdrop-blur supports-[backdrop-filter]:bg-background/60' : 'bg-transparent'}`}>
       <div className="container mx-auto flex h-20 items-center justify-between px-6">
-        <Link href="/" className="flex items-center gap-3" aria-label="Singh Associates Home">
-          <Gavel className="h-7 w-7 text-secondary" />
-          <span className="font-headline text-xl sm:text-2xl font-bold text-primary">
-            Singh <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[hsl(217,91%,75%)]">Associates</span>
-          </span>
-        </Link>
+        <Logo />
         <nav className="hidden md:flex items-center gap-6">
           {navLinks.map((link) => (
             <a key={link.href} href={link.href} className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors">
@@ -68,9 +65,10 @@ const Header = () => {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <a href="tel:7007894901" onClick={handleCallClick} className="flex items-center gap-3 text-md font-semibold text-[#00FFFF] hover:text-secondary transition-colors underline underline-offset-4">
+          <ThemeToggle />
+          <a href="tel:7007894901" onClick={handleCallClick} className="flex items-center gap-3 text-md font-semibold text-foreground dark:text-secondary hover:text-primary transition-colors underline underline-offset-4">
             <Phone className="h-4 w-4 animate-pulse" />
-            <span>7007894901</span>
+            <span className="hidden xs:inline">7007894901</span>
           </a>
           <div className="md:hidden">
             {isMounted && (
@@ -87,12 +85,19 @@ const Header = () => {
                     <SheetDescription className="sr-only">Main navigation</SheetDescription>
                   </SheetHeader>
                   <div className="p-4">
-                    <div className="flex flex-col space-y-4">
+                    <div className="flex flex-col space-y-6">
+                      <div className="pb-4 transform scale-90 -translate-x-4">
+                         <Logo />
+                      </div>
                       {navLinks.map((link) => (
-                         <a key={link.href} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="text-lg font-medium text-foreground/80 hover:text-primary transition-colors">
+                         <a key={link.href} href={link.href} onClick={() => setIsMobileMenuOpen(false)} className="text-xl font-medium text-foreground/80 hover:text-primary transition-colors border-b border-border pb-2">
                            {link.label}
                          </a>
                       ))}
+                      <div className="pt-4 flex items-center justify-between">
+                        <span className="text-sm text-muted-foreground uppercase tracking-widest font-semibold text-[10px]">Switch Theme</span>
+                        <ThemeToggle />
+                      </div>
                     </div>
                   </div>
                 </SheetContent>
