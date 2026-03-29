@@ -19,9 +19,36 @@ const playfairDisplay = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://singhassociates.ai-fied.com'),
   title: 'Trusted Family Lawyer in Lucknow | Singh Associates | Divorce & Court Matters',
   description: 'Looking for a trusted family lawyer in Lucknow? Singh Associates, a leading family advocate in Lucknow, specializes in divorce cases and family court matters. Get expert legal help today.',
   keywords: "family lawyer in lucknow, family advocate in lucknow, divorce lawyer in lucknow,family court lawyer in lucknow, singh associates",
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Trusted Family Lawyer in Lucknow | Singh Associates | Divorce & Court Matters',
+    description: 'Looking for a trusted family lawyer in Lucknow? Singh Associates, a leading family advocate in Lucknow, specializes in divorce cases and family court matters. Get expert legal help today.',
+    url: 'https://singhassociates.ai-fied.com',
+    siteName: 'Singh Associates',
+    locale: 'en_IN',
+    type: 'website',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  twitter: {
+    title: 'Trusted Family Lawyer in Lucknow | Singh Associates',
+    card: 'summary_large_image',
+  },
 };
 
 export default function RootLayout({

@@ -30,7 +30,7 @@ const HeroSection = () => {
           <div className="text-left">
             <h1 className="font-headline text-4xl md:text-5xl font-bold tracking-tight text-primary">
               Trusted Family &{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-secondary to-[hsl(217,91%,75%)]">
+              <span className="text-primary shimmer-text after:opacity-50">
                 Divorce Lawyer
               </span>{" "}
               in Lucknow

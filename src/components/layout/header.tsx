@@ -65,11 +65,15 @@ const Header = () => {
           ))}
         </nav>
         <div className="flex items-center gap-4">
-          <ThemeToggle />
-          <a href="tel:7007894901" onClick={handleCallClick} className="flex items-center gap-3 text-md font-semibold text-foreground dark:text-secondary hover:text-primary transition-colors underline underline-offset-4">
-            <Phone className="h-4 w-4 animate-pulse" />
-            <span className="hidden xs:inline">7007894901</span>
-          </a>
+          <div className="hidden md:block">
+            <ThemeToggle />
+          </div>
+          <Button asChild className="hidden xs:flex h-11 px-6 rounded-full font-bold shadow-md transform transition-transform hover:scale-105 active:scale-95">
+            <a href="tel:7007894901" onClick={handleCallClick} className="flex items-center gap-2">
+              <Phone className="h-4 w-4" />
+              <span>7007894901</span>
+            </a>
+          </Button>
           <div className="md:hidden">
             {isMounted && (
              <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
