@@ -1,6 +1,6 @@
 'use client';
 import Link from 'next/link';
-import { Gavel, MapPin, Phone, Mail } from 'lucide-react';
+import { Gavel, MapPin, Phone } from 'lucide-react';
 
 declare global {
   interface Window {
@@ -54,12 +54,6 @@ const Footer = () => {
                 <Phone className="h-5 w-5 mt-1 shrink-0 text-secondary" />
                 <a href="tel:7007894901" onClick={handleCallClick} className="hover:text-secondary transition-colors">
                   7007894901
-                </a>
-              </li>
-              <li className="flex items-start gap-3">
-                <Mail className="h-5 w-5 mt-1 shrink-0 text-secondary" />
-                <a href="mailto:contact@singhassociates.ai-fied.com" className="hover:text-secondary transition-colors">
-                  contact@singhassociates.ai-fied.com
                 </a>
               </li>
               <li className="flex items-start gap-3">

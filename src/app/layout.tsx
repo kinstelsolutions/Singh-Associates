@@ -5,6 +5,7 @@ import { Analytics } from "@vercel/analytics/next"
 import Script from 'next/script';
 import { Open_Sans, Playfair_Display } from 'next/font/google';
 import { ThemeProvider } from "@/components/theme-provider";
+import { WhatsAppButton } from "@/components/whatsapp-button";
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -98,6 +99,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <WhatsAppButton />
           <Analytics />
           <Toaster />
         </ThemeProvider>

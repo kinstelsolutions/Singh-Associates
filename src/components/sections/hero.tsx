@@ -49,7 +49,7 @@ const HeroSection = () => {
                 <a
                   href="tel:7007894901"
                   onClick={handleCallClick}>
-                  Consult Now
+                  Call Now
                 </a>
               </Button>
             </div>
