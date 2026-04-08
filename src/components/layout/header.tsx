@@ -6,13 +6,7 @@ import { Phone, Menu } from 'lucide-react';
 import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetTrigger, SheetDescription } from '@/components/ui/sheet';
 import { ThemeToggle } from '@/components/ui/theme-toggle';
 import { Logo } from '@/components/ui/logo';
-
-declare global {
-  interface Window {
-    gtag_report_conversion: (url: string) => boolean;
-    gtag: (...args: any[]) => void;
-  }
-}
+import { sendGTMEvent } from '@next/third-parties/google';
 
 
 const Header = () => {
@@ -39,18 +33,8 @@ const Header = () => {
     { href: '#contact', label: 'Contact' },
   ];
 
-  const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    if (window.gtag) {
-      window.gtag('event', 'client_called');
-      if (window.gtag_report_conversion) {
-        window.gtag_report_conversion('tel:7007894901');
-      } else {
-        window.location.href = 'tel:7007894901';
-      }
-    } else {
-        window.location.href = 'tel:7007894901';
-    }
+  const handleCallClick = () => {
+    sendGTMEvent({ event: 'conversion', placement: 'header', method: 'phone' });
   };
 
   return (

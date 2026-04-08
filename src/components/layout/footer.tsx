@@ -1,28 +1,12 @@
 'use client';
 import Link from 'next/link';
 import { Gavel, MapPin, Phone } from 'lucide-react';
-
-declare global {
-  interface Window {
-    gtag_report_conversion: (url: string) => boolean;
-    gtag: (...args: any[]) => void;
-  }
-}
+import { sendGTMEvent } from '@next/third-parties/google';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
-    const handleCallClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-      e.preventDefault();
-      if (window.gtag) {
-        window.gtag('event', 'client_called');
-        if (window.gtag_report_conversion) {
-          window.gtag_report_conversion('tel:7007894901');
-        } else {
-          window.location.href = 'tel:7007894901';
-        }
-      } else {
-          window.location.href = 'tel:7007894901';
-      }
+    const handleCallClick = () => {
+      sendGTMEvent({ event: 'conversion', placement: 'footer', method: 'phone' });
     };
 
   return (

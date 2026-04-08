@@ -2,7 +2,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 import { Analytics } from "@vercel/analytics/next"
-import Script from 'next/script';
+import { GoogleTagManager } from '@next/third-parties/google';
 import { Open_Sans, Playfair_Display } from 'next/font/google';
 import { ThemeProvider } from "@/components/theme-provider";
 import { WhatsAppButton } from "@/components/whatsapp-button";
@@ -59,38 +59,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${openSans.variable} ${playfairDisplay.variable} scroll-smooth`} suppressHydrationWarning>
-      <head>
-        {/* Google tag (gtag.js) */}
-        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-WM58ZG0GEG"></Script>
-        <Script id="google-analytics">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', 'G-WM58ZG0GEG');
-          `}
-        </Script>
-        {/* Event snippet for Click to call (1) conversion page */}
-        <Script id="google-ads-conversion">
-          {`
-            function gtag_report_conversion(url) {
-              var callback = function () {
-                if (typeof(url) != 'undefined') {
-                  window.location = url;
-                }
-              };
-              gtag('event', 'conversion', {
-                  'send_to': 'AW-17779169352/0V9LCLfogtcbEMiw4p1C',
-                  'value': 1.0,
-                  'currency': 'INR',
-                  'event_callback': callback
-              });
-              return false;
-            }
-          `}
-        </Script>
-      </head>
+      <GoogleTagManager gtmId="GTM-WV3HC3MJ" />
       <body className="font-body bg-background text-foreground antialiased">
         <ThemeProvider
           attribute="class"
